@@ -29,6 +29,10 @@ void UIntToHexStr(unsigned int uiValue, char pcString[]){
 	}
 }
 
+int pointer = 10;
+
+int * pointer_to_pointer;
+
 
 enum Result eHexStringToUInt(char pcStr[], unsigned int *puiValue){
 	char cCounter;
@@ -66,6 +70,7 @@ void AppendUIntToString(unsigned int uiValue, char pcDestinationStr[]){
 }
 
 int main(){
+	
 	char acStringA[] = "testyyyyyyyyyyyyyoneone!!!!";
 	char acStringC[MAX_LENGTH];
 	
@@ -78,6 +83,8 @@ int main(){
 	eRes = eHexStringToUInt(acStringC, &uiValue);
 	
 	AppendUIntToString(65000, acStringA);
+	
+	pointer_to_pointer = &pointer;
 	
 	return 0;
 }

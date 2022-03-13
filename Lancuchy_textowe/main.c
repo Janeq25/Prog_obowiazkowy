@@ -1,50 +1,47 @@
 #define NULL '\0'
 #define MAX_LENGTH 254
-#define CAPITAL_LETTER_ASCI_OFFSET	55
-#define NUMBER_ASCI_OFFSET 48
-
 
 enum CompResult {DIFFRENT, EQUAL};
 
 void CopyString(char pcSource[], char pcDestination[]){
-	char cCounter;
+	char cCurrentCharIndex;
 	
-	for (cCounter = 0; pcSource[cCounter] != NULL; cCounter++){
-		pcDestination[cCounter] = pcSource[cCounter];
+	for (cCurrentCharIndex = 0; pcSource[cCurrentCharIndex] != NULL; cCurrentCharIndex++){
+		pcDestination[cCurrentCharIndex] = pcSource[cCurrentCharIndex];
 	}
 	
-	pcDestination[cCounter] = NULL;
+	pcDestination[cCurrentCharIndex] = NULL;
 }
 
 enum CompResult eCompareString(char pcStr1[], char pcStr2[]){
-	char cCounter;
+	char cCurrentCharIndex;
 	
-	for (cCounter = 0; pcStr1[cCounter] != NULL; cCounter++){
-		if (pcStr1[cCounter] != pcStr2[cCounter]){
+	for (cCurrentCharIndex = 0; pcStr1[cCurrentCharIndex] != NULL; cCurrentCharIndex++){
+		if (pcStr1[cCurrentCharIndex] != pcStr2[cCurrentCharIndex]){
 			return DIFFRENT;
 		}
 	}
-	if (pcStr2[cCounter] != NULL){
+	if (pcStr2[cCurrentCharIndex] != NULL){
 		return DIFFRENT;
 	}
 	return EQUAL;
 }
 
 void AppendString(char pcSourceStr[], char pcDestinationStr[]){
-	char cCounter;
+	char cCurrentCharIndex;
 	
-	for (cCounter = 0; pcDestinationStr[cCounter] != NULL; cCounter++){}
+	for (cCurrentCharIndex = 0; pcDestinationStr[cCurrentCharIndex] != NULL; cCurrentCharIndex++){}
 		
-	CopyString(pcSourceStr, (pcDestinationStr + cCounter));
+	CopyString(pcSourceStr, (pcDestinationStr + cCurrentCharIndex));
 }
 
 
 void ReplaceCharactersInString(char pcString[], char cOldChar, char cNewChar){
-	char cCounter;
+	char cCurrentCharIndex;
 	
-	for (cCounter = 0; pcString[cCounter] != NULL; cCounter++){
-		if (pcString[cCounter] == cOldChar){
-			pcString[cCounter] = cNewChar;
+	for (cCurrentCharIndex = 0; pcString[cCurrentCharIndex] != NULL; cCurrentCharIndex++){
+		if (pcString[cCurrentCharIndex] == cOldChar){
+			pcString[cCurrentCharIndex] = cNewChar;
 		}
 	}
 }
