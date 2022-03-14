@@ -47,7 +47,7 @@ void ReplaceCharactersInString(char pcString[], char cOldChar, char cNewChar){
 }
 
 int main(){
-	char acStringA[] = "testyyyyyyyyyyyyyoneone!!!!";
+	char acStringA[] = "testyyyyyyyyyyyyoneone!!!!";
 	char acStringB[MAX_LENGTH] = "testyyz";
 	char acStringC[MAX_LENGTH];
 	
