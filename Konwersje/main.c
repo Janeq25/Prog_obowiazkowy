@@ -6,27 +6,27 @@ enum Result {OK, ERROR};
 
 void UIntToHexStr(unsigned int uiValue, char pcString[]){
 	
-	signed char scNybbleNumber;
+	char cNybbleCounter;
 	char cNybble;
 	
 	pcString[0] = '0';
 	pcString[1] = 'x';
 	
-	for (scNybbleNumber = 3; scNybbleNumber >= 0; scNybbleNumber--){
+	for (cNybbleCounter = 0; cNybbleCounter < 4; cNybbleCounter++){
 		
-		cNybble = (uiValue >> (scNybbleNumber * 4)) & 0xF;
+		cNybble = (uiValue >> (cNybbleCounter * 4)) & 0xf;
 		
 		if (cNybble > 9){
-			pcString[5 - scNybbleNumber] = cNybble + ('A' - 10);
+			pcString[5 - cNybbleCounter] = cNybble + ('A' - 10);
 		}
 		else{
-			pcString[5 - scNybbleNumber] = cNybble + '0';
+			pcString[5 - cNybbleCounter] = cNybble + '0';
 		}
 	}
 }
 
 enum Result eHexStringToUInt(char pcStr[], unsigned int *puiValue){
-	char cArrayElementNumber;
+	char cCharCounter;
 	char cNybble;
 	
 	if (pcStr[0] != '0') { return ERROR; }
@@ -35,23 +35,21 @@ enum Result eHexStringToUInt(char pcStr[], unsigned int *puiValue){
 
 	*puiValue = 0x00;
 
-	for (cArrayElementNumber = 2; cArrayElementNumber < 6; cArrayElementNumber++){
-		cNybble = pcStr[cArrayElementNumber];
+	for (cCharCounter = 2; pcStr[cCharCounter] != NULL; cCharCounter++){
+		cNybble = pcStr[cCharCounter];
+		
+		if (cCharCounter > 5){
+			return ERROR;
+		}
 		
 		*puiValue = *puiValue << 4;
 		
-		if (cNybble == NULL){
-			return OK;
-		}
 		if (cNybble >= 'A'){
-			*puiValue = *puiValue | (cNybble-('A' - 10));
+			*puiValue = *puiValue | (cNybble - ('A' - 10));
 		}
 		else{
-			*puiValue = *puiValue | (cNybble-'0');
+			*puiValue = *puiValue | (cNybble - '0');
 		}
-		
-		
-		
 	}
 	return OK;
 }
@@ -60,19 +58,22 @@ void AppendUIntToString(unsigned int uiValue, char pcDestinationStr[]){
 	char cStringLength;
 	
 	for (cStringLength = 0; pcDestinationStr[cStringLength] != NULL; cStringLength++){}
+		
 	UIntToHexStr(uiValue, &pcDestinationStr[cStringLength]);
 }
 
 int main(){
 	
 	char acStringA[MAX_LENGTH] = "testyoe!!!!";
-	char acStringC[MAX_LENGTH];
+	//char acStringC[MAX_LENGTH];
 	
 	enum Result eRes = ERROR;
 	
 	unsigned int uiValue;
 	
-	UIntToHexStr(65000, acStringC);
+	//UIntToHexStr(65000, acStringC);
+	
+	char acStringC[] = "0x123456789";
 	
 	eRes = eHexStringToUInt(acStringC, &uiValue);
 	

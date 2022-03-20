@@ -4,51 +4,51 @@
 enum CompResult {DIFFRENT, EQUAL};
 
 void CopyString(char pcSource[], char pcDestination[]){
-	char cCurrentCharIndex;
+	char cCharCounter;
 	
-	for (cCurrentCharIndex = 0; pcSource[cCurrentCharIndex] != NULL; cCurrentCharIndex++){
-		pcDestination[cCurrentCharIndex] = pcSource[cCurrentCharIndex];
+	for (cCharCounter = 0; pcSource[cCharCounter] != NULL; cCharCounter++){
+		pcDestination[cCharCounter] = pcSource[cCharCounter];
 	}
 	
-	pcDestination[cCurrentCharIndex] = NULL;
+	pcDestination[cCharCounter] = NULL;
 }
 
 enum CompResult eCompareString(char pcStr1[], char pcStr2[]){
-	char cCurrentCharIndex;
+	char cCharCounter;
 	
-	for (cCurrentCharIndex = 0; pcStr1[cCurrentCharIndex] != NULL; cCurrentCharIndex++){
-		if (pcStr1[cCurrentCharIndex] != pcStr2[cCurrentCharIndex]){
+	for (cCharCounter = 0; pcStr1[cCharCounter] != NULL; cCharCounter++){
+		if (pcStr1[cCharCounter] != pcStr2[cCharCounter]){
 			return DIFFRENT;
 		}
 	}
-	if (pcStr2[cCurrentCharIndex] != NULL){
+	if (pcStr2[cCharCounter] != NULL){
 		return DIFFRENT;
 	}
 	return EQUAL;
 }
 
 void AppendString(char pcSourceStr[], char pcDestinationStr[]){
-	char cCurrentCharIndex;
+	char cCharCounter;
 	
-	for (cCurrentCharIndex = 0; pcDestinationStr[cCurrentCharIndex] != NULL; cCurrentCharIndex++){}
+	for (cCharCounter = 0; pcDestinationStr[cCharCounter] != NULL; cCharCounter++){}
 		
-	CopyString(pcSourceStr, (pcDestinationStr + cCurrentCharIndex));
+	CopyString(pcSourceStr, (pcDestinationStr + cCharCounter));
 }
 
 
 void ReplaceCharactersInString(char pcString[], char cOldChar, char cNewChar){
-	char cCurrentCharIndex;
+	char cCharCounter;
 	
-	for (cCurrentCharIndex = 0; pcString[cCurrentCharIndex] != NULL; cCurrentCharIndex++){
-		if (pcString[cCurrentCharIndex] == cOldChar){
-			pcString[cCurrentCharIndex] = cNewChar;
+	for (cCharCounter = 0; pcString[cCharCounter] != NULL; cCharCounter++){
+		if (pcString[cCharCounter] == cOldChar){
+			pcString[cCharCounter] = cNewChar;
 		}
 	}
 }
 
 int main(){
-	char acStringA[] = "testyyyyyyyyyyyyoneone!!!!";
-	char acStringB[MAX_LENGTH] = "testyyz";
+	char acStringA[] = "teststring!";
+	char acStringB[MAX_LENGTH] = "tests";
 	char acStringC[MAX_LENGTH];
 	
 	enum CompResult eResult = DIFFRENT;
@@ -60,6 +60,6 @@ int main(){
 	
 	AppendString(acStringA, acStringB);
 	
-	ReplaceCharactersInString(acStringA, 'y', 'z');
+	ReplaceCharactersInString(acStringA, 's', 'z');
 	return 0;
 }

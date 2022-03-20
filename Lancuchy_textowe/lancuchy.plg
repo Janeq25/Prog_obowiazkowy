@@ -3,35 +3,7 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Project:</h2>
-C:\Users\janek\Desktop\Prog_obowiazkowy\Lancuchy_textowe\lancuchy.uvproj
+D:\sem 2\Prog_obowiazkowy\Lancuchy_textowe\lancuchy.uvproj
 Project File Date:  03/11/2022
 
 <h2>Output:</h2>
-Build target 'Target 1'
-compiling main.c...
-main.c(52): warning:  #177-D: variable "acStringC" was declared but never referenced
-main.c(54): warning:  #550-D: variable "eResult" was set but never used
-linking...
-Program Size: Code=912 RO-data=272 RW-data=0 ZI-data=1256  
-".\lancuchy.axf" - 0 Errors, 2 Warning(s).
-Build target 'Target 1'
-compiling main.c...
-main.c(52): warning:  #177-D: variable "acStringC" was declared but never referenced
-main.c(54): warning:  #550-D: variable "eResult" was set but never used
-linking...
-Program Size: Code=912 RO-data=272 RW-data=0 ZI-data=1256  
-".\lancuchy.axf" - 0 Errors, 2 Warning(s).
-Build target 'Target 1'
-compiling main.c...
-main.c(52): warning:  #177-D: variable "acStringC" was declared but never referenced
-main.c(54): warning:  #550-D: variable "eResult" was set but never used
-linking...
-Program Size: Code=912 RO-data=272 RW-data=0 ZI-data=1256  
-".\lancuchy.axf" - 0 Errors, 2 Warning(s).
-Build target 'Target 1'
-compiling main.c...
-main.c(52): warning:  #177-D: variable "acStringC" was declared but never referenced
-main.c(54): warning:  #550-D: variable "eResult" was set but never used
-linking...
-Program Size: Code=912 RO-data=272 RW-data=0 ZI-data=1256  
-".\lancuchy.axf" - 0 Errors, 2 Warning(s).

@@ -3,62 +3,37 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Project:</h2>
-C:\Users\janek\Desktop\Prog_obowiazkowy\Konwersje\konwersje.uvproj
+D:\sem 2\Prog_obowiazkowy\Konwersje\konwersje.uvproj
 Project File Date:  03/11/2022
 
 <h2>Output:</h2>
 Build target 'Target 1'
 compiling main.c...
-main.c(80): error:  #20: identifier "pointer_to_pointer" is undefined
-main.c(80): error:  #20: identifier "pointer" is undefined
-main.c(70): warning:  #550-D: variable "eRes" was set but never used
-".\konwersje.axf" - 2 Errors, 1 Warning(s).
-Target not created
-Build target 'Target 1'
-compiling main.c...
-main.c(70): warning:  #550-D: variable "eRes" was set but never used
+main.c(71): warning:  #550-D: variable "eRes" was set but never used
 linking...
-Program Size: Code=968 RO-data=16 RW-data=0 ZI-data=1256  
-".\konwersje.axf" - 0 Errors, 1 Warning(s).
-Build target 'Target 1'
-compiling main.c...
-main.c(70): warning:  #550-D: variable "eRes" was set but never used
-linking...
-Program Size: Code=968 RO-data=16 RW-data=0 ZI-data=1256  
-".\konwersje.axf" - 0 Errors, 1 Warning(s).
-Build target 'Target 1'
-compiling main.c...
-main.c(72): warning:  #550-D: variable "eRes" was set but never used
-linking...
-Program Size: Code=976 RO-data=16 RW-data=0 ZI-data=1256  
-".\konwersje.axf" - 0 Errors, 1 Warning(s).
-Build target 'Target 1'
-compiling main.c...
-main.c(73): warning:  #550-D: variable "eRes" was set but never used
-linking...
-Program Size: Code=984 RO-data=16 RW-data=0 ZI-data=1256  
-".\konwersje.axf" - 0 Errors, 1 Warning(s).
-Build target 'Target 1'
-compiling main.c...
-main.c(73): warning:  #550-D: variable "eRes" was set but never used
-linking...
-Program Size: Code=984 RO-data=16 RW-data=0 ZI-data=1256  
+Program Size: Code=952 RO-data=272 RW-data=0 ZI-data=1256  
 ".\konwersje.axf" - 0 Errors, 1 Warning(s).
 Build target 'Target 1'
 compiling main.c...
 main.c(71): warning:  #550-D: variable "eRes" was set but never used
 linking...
-Program Size: Code=984 RO-data=16 RW-data=0 ZI-data=1256  
+Program Size: Code=952 RO-data=272 RW-data=0 ZI-data=1256  
 ".\konwersje.axf" - 0 Errors, 1 Warning(s).
 Build target 'Target 1'
 compiling main.c...
 main.c(71): warning:  #550-D: variable "eRes" was set but never used
 linking...
-Program Size: Code=868 RO-data=16 RW-data=0 ZI-data=1256  
+Program Size: Code=956 RO-data=272 RW-data=0 ZI-data=1256  
 ".\konwersje.axf" - 0 Errors, 1 Warning(s).
 Build target 'Target 1'
 compiling main.c...
-main.c(71): warning:  #550-D: variable "eRes" was set but never used
+main.c(69): warning:  #550-D: variable "eRes" was set but never used
 linking...
 Program Size: Code=960 RO-data=272 RW-data=0 ZI-data=1256  
+".\konwersje.axf" - 0 Errors, 1 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+main.c(70): warning:  #550-D: variable "eRes" was set but never used
+linking...
+Program Size: Code=972 RO-data=272 RW-data=0 ZI-data=1256  
 ".\konwersje.axf" - 0 Errors, 1 Warning(s).
