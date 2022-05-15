@@ -6,27 +6,28 @@ enum Result {OK, ERROR};
 
 void UIntToHexStr(unsigned int uiValue, char pcString[]){
 	
-	char cNybbleCounter;
+	char cNybbleCtr;
 	char cNybble;
 	
 	pcString[0] = '0';
 	pcString[1] = 'x';
 	
-	for (cNybbleCounter = 0; cNybbleCounter < 4; cNybbleCounter++){
+	for (cNybbleCtr = 0; cNybbleCtr < 4; cNybbleCtr++){
 		
-		cNybble = (uiValue >> (cNybbleCounter * 4)) & 0xf;
+		cNybble = (uiValue >> (cNybbleCtr * 4)) & 0xf;
 		
 		if (cNybble > 9){
-			pcString[5 - cNybbleCounter] = cNybble + ('A' - 10);
+			pcString[5 - cNybbleCtr] = cNybble + ('A' - 10);
 		}
 		else{
-			pcString[5 - cNybbleCounter] = cNybble + '0';
+			pcString[5 - cNybbleCtr] = cNybble + '0';
 		}
 	}
+	pcString[6] = NULL;
 }
 
 enum Result eHexStringToUInt(char pcStr[], unsigned int *puiValue){
-	char cCharCounter;
+	char cCharCtr;
 	char cNybble;
 	
 	if (pcStr[0] != '0') { return ERROR; }
@@ -35,10 +36,10 @@ enum Result eHexStringToUInt(char pcStr[], unsigned int *puiValue){
 
 	*puiValue = 0x00;
 
-	for (cCharCounter = 2; pcStr[cCharCounter] != NULL; cCharCounter++){
-		cNybble = pcStr[cCharCounter];
+	for (cCharCtr = 2; pcStr[cCharCtr] != NULL; cCharCtr++){
+		cNybble = pcStr[cCharCtr];
 		
-		if (cCharCounter > 5){
+		if (cCharCtr > 5){
 			return ERROR;
 		}
 		
@@ -64,20 +65,14 @@ void AppendUIntToString(unsigned int uiValue, char pcDestinationStr[]){
 
 int main(){
 	
-	char acStringA[MAX_LENGTH] = "testyoe!!!!";
-	//char acStringC[MAX_LENGTH];
-	
+	char acStringA[] = "0xFE8DA";
+
 	enum Result eRes = ERROR;
 	
 	unsigned int uiValue;
 	
-	//UIntToHexStr(65000, acStringC);
+	eRes = eHexStringToUInt(acStringA, &uiValue);
 	
-	char acStringC[] = "0x123456789";
-	
-	eRes = eHexStringToUInt(acStringC, &uiValue);
-	
-	AppendUIntToString(65000, acStringA);
 	
 	return 0;
 }

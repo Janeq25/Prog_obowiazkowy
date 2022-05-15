@@ -7,33 +7,3 @@ D:\sem 2\Prog_obowiazkowy\Konwersje\konwersje.uvproj
 Project File Date:  03/11/2022
 
 <h2>Output:</h2>
-Build target 'Target 1'
-compiling main.c...
-main.c(71): warning:  #550-D: variable "eRes" was set but never used
-linking...
-Program Size: Code=952 RO-data=272 RW-data=0 ZI-data=1256  
-".\konwersje.axf" - 0 Errors, 1 Warning(s).
-Build target 'Target 1'
-compiling main.c...
-main.c(71): warning:  #550-D: variable "eRes" was set but never used
-linking...
-Program Size: Code=952 RO-data=272 RW-data=0 ZI-data=1256  
-".\konwersje.axf" - 0 Errors, 1 Warning(s).
-Build target 'Target 1'
-compiling main.c...
-main.c(71): warning:  #550-D: variable "eRes" was set but never used
-linking...
-Program Size: Code=956 RO-data=272 RW-data=0 ZI-data=1256  
-".\konwersje.axf" - 0 Errors, 1 Warning(s).
-Build target 'Target 1'
-compiling main.c...
-main.c(69): warning:  #550-D: variable "eRes" was set but never used
-linking...
-Program Size: Code=960 RO-data=272 RW-data=0 ZI-data=1256  
-".\konwersje.axf" - 0 Errors, 1 Warning(s).
-Build target 'Target 1'
-compiling main.c...
-main.c(70): warning:  #550-D: variable "eRes" was set but never used
-linking...
-Program Size: Code=972 RO-data=272 RW-data=0 ZI-data=1256  
-".\konwersje.axf" - 0 Errors, 1 Warning(s).

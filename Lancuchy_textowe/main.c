@@ -47,19 +47,10 @@ void ReplaceCharactersInString(char pcString[], char cOldChar, char cNewChar){
 }
 
 int main(){
-	char acStringA[] = "teststring!";
-	char acStringB[MAX_LENGTH] = "tests";
-	char acStringC[MAX_LENGTH];
-	
-	enum CompResult eResult = DIFFRENT;
-	
-	
-	CopyString(acStringA, acStringB);
-	
-	eResult = eCompareString(acStringA, acStringB);
+	char acStringA[MAX_LENGTH] = "StringA";
+	char acStringB[MAX_LENGTH] = "StringB";
 	
 	AppendString(acStringA, acStringB);
 	
-	ReplaceCharactersInString(acStringA, 's', 'z');
 	return 0;
 }
