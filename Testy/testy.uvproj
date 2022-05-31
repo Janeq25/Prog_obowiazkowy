@@ -44,7 +44,7 @@
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
           <OutputDirectory>.\</OutputDirectory>
-          <OutputName>dekodowanie</OutputName>
+          <OutputName>testy</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>0</CreateHexFile>
@@ -406,6 +406,11 @@
               <FileName>string_conversion.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\string_conversion.c</FilePath>
+            </File>
+            <File>
+              <FileName>tokens.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\tokens.c</FilePath>
             </File>
           </Files>
         </Group>

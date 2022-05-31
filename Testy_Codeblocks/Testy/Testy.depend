@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1654024342 source:d:\sem_2\prog_obowiazkowy\testy_codeblocks\testy\main.c
+	<stdio.h>
+	"string_conversion.h"
+	"tokens.h"
+
+1652564436 d:\sem_2\prog_obowiazkowy\testy_codeblocks\testy\string_conversion.h
+
+1654023586 d:\sem_2\prog_obowiazkowy\testy_codeblocks\testy\tokens.h
+
+1654001898 source:d:\sem_2\prog_obowiazkowy\testy_codeblocks\testy\string_conversion.c
+	"string_conversion.h"
+
+1654024112 source:d:\sem_2\prog_obowiazkowy\testy_codeblocks\testy\tokens.c
+	"tokens.h"
+	"string_conversion.h"
+

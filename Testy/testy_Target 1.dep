@@ -1,0 +1,10 @@
+Dependencies for Project 'testy', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Startup.s)(0x51C81B7E)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\main.c)(0x6293B31C)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\main.o --omf_browse .\main.crf --depend .\main.d)
+I (D:\sem_2\Prog_obowiazkowy\Testy\string_conversion.h)(0x628021D4)
+I (D:\sem_2\Prog_obowiazkowy\Testy\tokens.h)(0x6293B62D)
+F (.\string_conversion.c)(0x628021C3)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\string_conversion.o --omf_browse .\string_conversion.crf --depend .\string_conversion.d)
+I (D:\sem_2\Prog_obowiazkowy\Testy\string_conversion.h)(0x628021D4)
+F (.\tokens.c)(0x6293B62D)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\tokens.o --omf_browse .\tokens.crf --depend .\tokens.d)
+I (D:\sem_2\Prog_obowiazkowy\Testy\tokens.h)(0x6293B62D)
+I (D:\sem_2\Prog_obowiazkowy\Testy\string_conversion.h)(0x628021D4)
